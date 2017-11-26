@@ -1,0 +1,5 @@
+addDefaultCharset utf8;
+#php_value date.timezone Europe/Kiev
+RewriteEngine on
+RewriteCond $1 !^(index\.php|app|landing|robots\.txt|favicon\.png|favicon\.ico|files|politic.html|httploaders.txt|site|SQLyogTunnel\.php)
+RewriteRule ^(.*)$ index.php?/$1 [L]
