@@ -6,6 +6,7 @@ class Home extends CI_Controller {
 	{
 		$data['title'] = "Дослідження термодинамічної стабільності рідких полімерних струменів";
 		$this->load->view('templates/head', $data);
+		$this->load->view('pages/calculating/calculating');
 		$this->load->view('templates/footer');
 	}
 }

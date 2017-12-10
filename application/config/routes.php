@@ -57,6 +57,7 @@ $route['login'] = 'account/login';
 $route['logout'] = 'account/logout';
 
 $route['calculating'] = 'users/scientist/home';
+$route['calculate'] = 'users/scientist/calculate';
 
 $route['users'] = 'users/admin/users';
 $route['users/(.+)'] = 'users/admin/users/$1';
