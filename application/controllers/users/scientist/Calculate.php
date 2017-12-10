@@ -10,6 +10,14 @@ class Calculate extends CI_Controller {
 	public function index()
 	{
 		$data = $this->input->post();
-		$this->calc_model->calculate($data);
+		if($data['step'] == "step_1")
+			echo "q = <span id='q'>". $this->calc_model->calculate($data) ."</span>";
+		if($data['step'] == "step_2"){
+			$result = $this->calc_model->calculate($data);
+			echo "ꭙ = <span id='xi'>". $result['xi'] ."</span>; ρ = <span id='eta'>". $result['eta'] ."</span>";
+		}
+		if($data['step'] == "step_3"){
+			echo "δ = <span id='sigma'>". $this->calc_model->calculate($data) ."</span>";
+		}
 	}
 }

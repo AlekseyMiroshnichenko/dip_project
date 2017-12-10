@@ -22,9 +22,9 @@
 		      <li class="nav-item <?=($this->uri->segment(1)=='calculating')?"active":"";?>">
 		        <a class="nav-link" href="<?=base_url();?>">Головна</span></a>
 		      </li>
-		      <li class="nav-item <?=($this->uri->segment(1)=='cacl_history')?"active":"";?>">
+		     <!--  <li class="nav-item <?=($this->uri->segment(1)=='cacl_history')?"active":"";?>">
 		        <a class="nav-link" href="#">Історія</a>
-		      </li>
+		      </li> -->
 		      <li class="nav-item <?=($this->uri->segment(1)=='users')?"active":"";?>">
 		        <a class="nav-link" href="<?=base_url();?>users">Співробітники</a>
 		      </li>
