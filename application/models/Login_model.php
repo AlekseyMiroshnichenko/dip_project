@@ -3,7 +3,7 @@
 class Login_model extends CI_Model {
 	
 	public function isAdmin() {
-		if($this->session->userdata("role")=="admin") 
+		if($this->session->userdata("role")=="1") 
 			return true;
 		else
 			return false;

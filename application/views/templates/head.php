@@ -25,9 +25,11 @@
 		     <!--  <li class="nav-item <?=($this->uri->segment(1)=='cacl_history')?"active":"";?>">
 		        <a class="nav-link" href="#">Історія</a>
 		      </li> -->
+		    <?php if($this->session->userdata("role")=="1"):?>
 		      <li class="nav-item <?=($this->uri->segment(1)=='users')?"active":"";?>">
 		        <a class="nav-link" href="<?=base_url();?>users">Співробітники</a>
 		      </li>
+		  	<?php endif;?>
 		      <li class="nav-item float-right">
 		        <a class="nav-link" href="<?=base_url();?>logout">Вихід</a>
 		      </li>

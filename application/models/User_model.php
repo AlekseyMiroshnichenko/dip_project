@@ -13,38 +13,18 @@ class User_model extends CI_Model {
      * тип пользователя => страница
      */
     private $config_arr = array(
-        0 => array('advertiser', 'admin'),
-        1 => array('webmaster', 'admin'),
-        2 => array('advertiser', 'webmaster'),
-        3 => array(),
-        4 => array()
     );
     /*
      * Список разрешенных страниц для гостей
      */
     private $config_pages = array(
         'account/login',
-        'webmaster/register',
-        'webmaster/register/go',
-        'webmaster/register/request',
-        'for_advertisers',
-        'advertiser/register',
-        ''
     );
     /*
      * Список разрешенных сегментов для всех
      */
     private $rsegments = array(
         'login', 
-        // 'api_index', 
-        // 'sms_api', 
-        // 'recover', 
-        // 'home_cooperators', 
-        // 'cron',
-        // 'change_hold_status', 
-        // 'ulyssenardin_get_statuses',
-        // 'checker_users_ip',
-        // 'integration'
     );
 
     public function isAdmin() {

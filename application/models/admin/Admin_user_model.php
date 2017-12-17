@@ -59,7 +59,6 @@ class Admin_user_model extends CI_Model {
 	}
 
 	public function edit_user($data){
-		$this->output->enable_profiler();
 		$to_db = $this->make_user_info_arr($data);
 		$this->db->where('id',$to_db['id']);
 		$this->db->update('users', $to_db);
